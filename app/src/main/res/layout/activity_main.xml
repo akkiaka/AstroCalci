@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1C29"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F1016"
+        android:padding="24dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✨ AstroCalci ✨"
+            android:textColor="#FFD700" android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#15FFFFFF" android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="System Constants"
+                android:textSize="14sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText android:id="@+id/etConstantDivide" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Divide" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#88FFFFFF" android:backgroundTint="#FFD700" />
+                <EditText android:id="@+id/etConstantAddition" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Addition" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#88FFFFFF" android:backgroundTint="#FFD700" />
+                <EditText android:id="@+id/etConstantMultiply" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Multiply" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#88FFFFFF" android:backgroundTint="#FFD700" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planetary Degrees"
+            android:textSize="14sp"
+            android:textColor="#E0E0E0"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:paddingStart="4dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="☉ R1:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree1" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="☽ R2:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree2" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="☿ R3:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree3" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♀ R4:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree4" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♂ R5:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree5" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♃ R6:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree6" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal6" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♄ R7:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree7" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♅ R8:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree8" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♆ R9:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree9" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal9" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♇ R10:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree10" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="☊ R11:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree11" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal11" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="☋ R12:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree12" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal12" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♈ R13:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree13" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal13" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♉ R14:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree14" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal14" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♊ R15:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree15" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♋ R16:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree16" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♌ R17:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree17" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal17" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♍ R18:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree18" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♎ R19:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree19" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal19" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♏ R20:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree20" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal20" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♐ R21:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree21" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal21" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♑ R22:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree22" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal22" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="6dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♒ R23:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree23" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal23" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="24dp" android:padding="4dp">
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="♓ R24:" android:textStyle="bold" android:textColor="#FFD700"/>
+            <EditText android:id="@+id/etDegree24" android:layout_width="100dp" android:layout_height="wrap_content" android:hint="Degree" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#55FFFFFF" android:backgroundTint="#40FFFFFF"/>
+            <TextView android:id="@+id/tvFinal24" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Final: —" android:gravity="end" android:textStyle="bold" android:textColor="#FFD700"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="24dp"
+            android:background="#25FFFFFF"> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Total:"
+            android:textSize="18sp"
+            android:textColor="#FFD700"
+            android:paddingStart="12dp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvGrandTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:gravity="end"
+                android:paddingEnd="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCalculateAll"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Calculate Celestial Vectors"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFD700"
+            android:textColor="#1A1C29" android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
